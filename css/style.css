@@ -1,0 +1,130 @@
+body{
+   font-family: "Montserrat", sans-serif;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 30px;
+}
+ img{
+    max-width: 100%;
+ }
+ .h1-bold{
+   font-size: 40px;
+   font-weight: 700;
+ }
+ .heading{
+   color: orange;
+ }
+ .header img{
+   width: 60%;
+ }
+ .header{
+   color: white;
+   background-color: rgb(79, 7, 134);
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+ }
+ .btn-color{
+   border: 1.5px solid rgb(232, 68, 114);
+   border-radius: 5px;
+   color: white;
+   background-color:orange;
+ }
+ .header > div{
+    width: 45%;
+    padding: 18px;
+ }
+
+.header-left{
+margin-right: 50px;
+ }
+
+ 
+ .card{
+   padding: 30px;
+   box-shadow: 0 10px 35px rgb(0, 0, 0, 2);
+   border-radius: 10px;
+ }
+
+ a{
+   text-decoration: none;
+   color: yellow;
+ }
+ .card i{
+   background-color: yellow;
+   border-radius: 50%;
+   height: 50px;
+   width: 50px;
+   padding: 10px;
+   color: #ffff;
+   font-size: 1.6rem;
+ }
+
+ .card h3{
+   color: yellow;
+   font-size: 25px;
+ }
+ .card p{
+   margin: 10px 0;
+   line-height: 1.5;
+ }
+
+ .features{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+ }
+
+ .features >div{
+   width: 40%;
+   margin: 20px 0;
+ }
+ .padding{
+  padding-top: 10px;
+ }
+
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.gallery img{
+  border: 3px solid orangered;
+  height: 200px;
+  width: 100%;
+}
+
+
+ @media (max-width: 576px) {
+   body{
+      padding: 10px;
+   }
+    .header > div{
+        width: 100%;
+    }
+    .header-left{
+      margin-right: 0px;
+      margin-bottom: 20px;
+    }
+    .header-right {
+       display: flex;
+       justify-content: center;
+    }
+  .features >div{
+    width: 90%;
+  } 
+  .gallery{
+    grid-template-columns: 1fr;
+  }
+ }
+
+ @media (min-width:576) and (max-width: 776px) {
+    .header > div{
+        width: 100%;
+    }
+    .gallery{
+      grid-template-columns: 1fr 1fr;
+    }
+ }
+
+ 
